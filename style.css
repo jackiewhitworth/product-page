@@ -23,7 +23,6 @@ header {
     font-family: 'Benne', sans-serif;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 #header-img {
@@ -49,6 +48,24 @@ ul {
     display: flex;
     flex-direction: column;
  
+}
+
+@media(min-width: 400px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: darkgray;
+    }
+
+    main {
+        margin-top: 125px;
+    }
 }
 
 #footer ul {
